@@ -17,16 +17,17 @@ const Coffee = () => {
         <header>
             <h1>Coffee</h1>
         </header>
+        
         <main>
-            {getData.map( each => {
-                return(
-                    <div>
-                        <h3>{each.id} {each.title}</h3>
-                        <img src={each.image} alt='coffee' />
-                        <p>{each.description}</p>
-                    </div>
-                )
-            })}
+        {getData.map( each => {
+            return(
+                <div>
+                    <h2>{each.id} {each.title}</h2>
+                    <img src={each.image} alt='coffee' />
+                    <p>{each.description}</p>
+                </div>
+            )
+        })}
         </main>
         </>
     )
